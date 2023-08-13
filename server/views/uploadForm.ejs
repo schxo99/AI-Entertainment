@@ -1,0 +1,14 @@
+<!-- views/uploadForm.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio File Upload</title>
+  </head>
+  <body>
+    <h1>Upload an Audio File</h1>
+    <form action="/media" method="post" enctype="multipart/form-data">
+      <input type="file" name="audioFile">
+      <input type="submit" value="Upload">
+    </form>
+  </body>
+</html>

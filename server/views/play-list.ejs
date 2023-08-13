@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Player</title>
+</head>
+<body>
+  <h1>Audio Player</h1>
+  
+  <ul id="audio-list">
+    <% files.forEach(file => { %>
+      <li>
+        <audio id="audio-<%= file %>" controls>
+          <source src="../data/uploads/<%= file %>" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+        <button onclick="playAudio('<%= file %>')">Play</button>
+      </li>
+    <% }); %>
+  </ul>
+
+  <script>
+    const files = <%= JSON.stringify(files) %>; // Use the files variable from server-side
+
+    function playAudio(filename) {
+      const audio = document.getElementById(`audio-${filename}`);
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+</body>
+</html>

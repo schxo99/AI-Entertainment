@@ -27,15 +27,16 @@
 클라이언트로부터 모델과 노래 선택 시 DB에 저장이 되고, DB저장 시 로컬서버에서 배치파일을 실행하여 커스텀 음악 생성 후, buffer로 변환하여 DB에 저장 및 배포 서버에 저장.
 
 
-https://github.com/schxo99/AI-Entertainment/blob/main/image/Stay-%EC%95%88%EC%A7%80%EC%98%81.wav
-
-
-<div align = "center"> 
-  <br>
-    <h4>결과물</h4>
-    <source style="audio/mpeg: left;" src="https://github.com/schxo99/AI-Entertainment/blob/main/image/c.PNG" width="700" height="auto"/>
-    <source style="audio/mpeg: left;" src=(https://github.com/schxo99/AI-Entertainment/blob/main/image/Stay-%EC%95%88%EC%A7%80%EC%98%81.wav" width="700" height="auto"/>
-  </br>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WAV Audio Player</title>
+</head>
+<body>
+    <audio controls>
+        <source src="https://github.com/schxo99/AI-Entertainment/blob/main/image/Stay-%EC%95%88%EC%A7%80%EC%98%81.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
 
 
